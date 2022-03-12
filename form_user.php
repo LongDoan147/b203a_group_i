@@ -41,8 +41,21 @@ if (!empty($_POST['submit'])) {
                 <form method="POST">
                     <input type="hidden" name="id" value="<?php echo $_id ?>">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">User Name</label>
                         <input class="form-control" name="name" placeholder="Name" value='<?php if (!empty($user[0]['name'])) echo $user[0]['name'] ?>'>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone">Phone</label>
+                        <input class="form-control" name="phone" placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input class="form-control" name="fullname" placeholder="FullName">
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
